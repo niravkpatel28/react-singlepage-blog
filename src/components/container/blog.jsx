@@ -37,7 +37,7 @@ class Blog extends React.Component {
   componentDidMount() {
     axios
       .get(
-        `http://jsonplaceholder.typicode.com/posts?id=${this.state.currentId}`
+        `https://jsonplaceholder.typicode.com/posts?id=${this.state.currentId}`
       )
       .then((response) => {
         this.setState({
@@ -52,7 +52,7 @@ class Blog extends React.Component {
     let relatedLinks = [];
     console.log("generate link");
     axios
-      .get("http://jsonplaceholder.typicode.com/posts?_page=1&_limit=5")
+      .get("https://jsonplaceholder.typicode.com/posts?_page=1&_limit=5")
       .then(({ data }) => {
         relatedLinks = data.map((post) => {
           return {
@@ -77,7 +77,7 @@ class Blog extends React.Component {
         //console.log make api call
         axios
           .get(
-            `http://jsonplaceholder.typicode.com/posts?id=${this.state.currentId}`
+            `https://jsonplaceholder.typicode.com/posts?id=${this.state.currentId}`
           )
           .then((response) => {
             this.setState({

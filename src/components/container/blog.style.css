@@ -1,0 +1,14 @@
+.blog-content {
+  display: flex;
+  width: 60%;
+  flex-direction: column;
+}
+.side-panel {
+  width: 30%;
+}
+
+.blog-elements {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
